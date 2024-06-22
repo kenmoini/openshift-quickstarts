@@ -2,6 +2,8 @@
 
 A common practice is to leverage an external secrets platform and sync Secrets into OpenShift.  This is a better pattern for redistribution and access control.  This is a simple way to do so, there are other methods as well such as running a sidecar though that also introduces additional complexity and workload requirements.
 
+Additional documentation can be found here: https://external-secrets.io/latest/provider/hashicorp-vault/
+
 > User Story: I want to store secrets in Hashicorp Vault and have them synced into OpenShift when needed for a workload
 
 ## 1. Install the External Secrets Operator
