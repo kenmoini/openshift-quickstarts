@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: infinite-mario
+  #namespace: infinite-mario
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: infinite-mario
+  template:
+    metadata:
+      labels:
+        app: infinite-mario
+    spec:
+      containers:
+        - name: container
+          image: quay.io/kmoini/infinite_mario
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          resources: {}
+          imagePullPolicy: Always
+      restartPolicy: Always
+  strategy:
+    type: Recreate
+  revisionHistoryLimit: 3
+  progressDeadlineSeconds: 600
