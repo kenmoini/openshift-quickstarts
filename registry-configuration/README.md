@@ -4,15 +4,17 @@ Within OpenShift you can configure the platform to leverage private registries. 
 
 Additional documentation can be found here: https://docs.openshift.com/container-platform/4.15/openshift_images/image-configuration.html
 
+Ansible Automation to deploy Harbor and/or JFrog, as well as examples for mirroring OpenShift Installation Images can be found here: https://github.com/kenmoini/ocp4-disconnected-helper
+
 ## Disconnected/Private Image Registries
 
 If you are deploying OpenShift via a disconnected image registry that either have had images mirrored to it, or is acting as a pull-through/proxy cache, you can configure OpenShift to leverage that endpoint instead of public ones.  This can be configured during installation, or post-install.
 
 > Before configuring any additional/disconnected registries, ensure credentials to access the registry have been added to the cluster-wide Pull Secret.  This can easily be appended by editing the Secret via the Web UI.
 
-Create a set of ImageDigestSourcePolicy and ImageTagSourcePolicy CRs:
-
 > Before applying these configurations, it's advised to perform a deployment/pull test via the mirror to ensure the cluster can authenticate and access the mirrors.  If access or transport fails, the cluster will enter a degraded state.
+
+Create a set of ImageDigestSourcePolicy and ImageTagSourcePolicy CRs:
 
 ```yaml
 ---
@@ -41,6 +43,7 @@ spec:
       source: registry.connect.redhat.com
       mirrors:
         - registry-connect-redhat-remote.registry.example.com
+
 ---
 apiVersion: config.openshift.io/v1
 kind: ImageTagMirrorSet
