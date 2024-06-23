@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-httpd
+  #namespace: test-httpd
+  labels:
+    app: test-httpd
+spec:
+  selector:
+    matchLabels:
+      app: test-httpd
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: test-httpd
+    spec:
+      containers:
+        - name: httpd
+          resources:
+            limits:
+              cpu: 100m
+              memory: 128Mi
+            requests:
+              cpu: 100m
+              memory: 128Mi
+          image: registry.access.redhat.com/ubi8/httpd-24@sha256:b72f2fd69dbc32d273bebb2da30734c9bc8d9acfd210200e9ad5e69d8b089372
+          ports:
+            - containerPort: 8080
+              protocol: TCP

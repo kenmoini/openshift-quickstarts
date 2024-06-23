@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-httpd
+  # namespace: test-httpd
+  labels:
+    app: test-httpd
+spec:
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: test-httpd
+  type: ClusterIP

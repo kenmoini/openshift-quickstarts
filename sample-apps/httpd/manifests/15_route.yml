@@ -1,0 +1,16 @@
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: test-httpd
+  # namespace: test-httpd
+spec:
+  to:
+    kind: Service
+    name: test-httpd
+    weight: 100
+  port:
+    targetPort: "8080-tcp"
+  tls:
+    termination: edge
+  wildcardPolicy: None
