@@ -1,6 +1,8 @@
 # OpenShift Quickstarts
 
-This repository has a collection of walk-throughs that address common patterns when deploying OpenShift.  Note that these are somewhat opinionated guides, ideal for POCs, and that production deployments may need additional consideration.
+This repository has a collection of walk-throughs that address common patterns when deploying OpenShift.
+
+Note that these are somewhat opinionated guides, ideal for POCs, and that production deployments may need additional consideration.
 
 ## Index
 
