@@ -64,6 +64,8 @@ spec:
 
 An alternative to PVC-backed storage is an Object Store, eg S3-compatible buckets.  This allows the operation of multiple replicas.  Below is an example for configuring the internal image registry with OpenShift Data Foundations (ODF) - if using a different S3 service then you can simply skip the ObjectBucketClaim and configure the Secret and endpoint configuration to point to your alternative S3 service.
 
+You can also find a guide to deploy Minio for testing purposes in this repo at [backup/oadp/deploy-minio.md](../backup/oadp/deploy-minio.md)
+
 ```yaml
 ---
 # Create an ODF ObjectBucketClaim
