@@ -10,7 +10,7 @@ Note that these are somewhat opinionated guides, ideal for POCs, and that produc
 
 ### AI/ML
 
-- NVIDIA GPU Operator Setup
+- [NVIDIA GPU Operator Setup](./ai-ml/nvidia-gpu-operator-setup.md)
 - OpenShift AI Quickstart
 - StableDiffusion on OpenShift
 - IBM Granite on OpenShift
@@ -65,6 +65,11 @@ Note that these are somewhat opinionated guides, ideal for POCs, and that produc
 - [SystemD Services](./node-config/machineconfigs/systemd-services.md)
 - [Set Kubelet Configuration](./node-config/machineconfigs/kubelet-configuration.md)
 - [Set `core` User Password](./node-config/machineconfigs/set-core-user-password.md)
+
+### MachineSets
+
+- [AWS GPU MachineSets](./node-config/machinesets/aws-gpu-machineset.md)
+- [Azure GPU MachineSets](./node-config/machinesets/azure-gpu-machineset.md)
 
 ### Networking
 
