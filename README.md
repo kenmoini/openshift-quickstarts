@@ -25,8 +25,8 @@ This repository has a collection of walk-throughs that address common patterns w
 
 ### Backup
 
-- OADP Operator (Velero/Restic)
-- etcd Backup
+- [OADP Operator (Velero)](./backup/oadp/)
+- [etcd Backup](./backup/etcd/)
 
 ### GitOps
 
@@ -60,9 +60,9 @@ This repository has a collection of walk-throughs that address common patterns w
 
 ### MachineConfig
 
-- Enable Services
-- Configure Multipath
-- Set Kubelet Configuration
+- [SystemD Services](./node-config/machineconfigs/systemd-services.md)
+- [Set Kubelet Configuration](./node-config/machineconfigs/kubelet-configuration.md)
+- [Set `core` User Password](./node-config/machineconfigs/set-core-user-password.md)
 
 ### Networking
 
@@ -79,5 +79,5 @@ This repository has a collection of walk-throughs that address common patterns w
 ### Sample Applications
 
 - [Infinite Mario (Stateless)](./sample-apps/infinite-mario/)
-- Simple Apache HTTP Service
-- Test Mongo Database
+- [Simple Apache HTTP Service (Stateless)](./sample-apps/httpd/)
+- [Test Mongo Database (Stateful)](./sample-apps/test-mongodb/)
