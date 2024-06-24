@@ -68,8 +68,7 @@ spec:
   global:
     nodeSelector: {}
     #nodeSelector:
-    #  matchLabels:
-    #    node-role.kubernetes.io/infra: ""
+    #  node-role.kubernetes.io/infra: ""
     tolerations: []
     #tolerations:
     #  - effect: NoSchedule
@@ -105,8 +104,7 @@ spec:
     nameOverride: ''
     nodeSelector: {}
     #nodeSelector:
-    #  matchLabels:
-    #    node-role.kubernetes.io/infra: ""
+    #  node-role.kubernetes.io/infra: ""
     podAnnotations: {}
     podLabels: {}
     podSecurityContext: {}
@@ -152,8 +150,7 @@ spec:
   nameOverride: ''
   nodeSelector: {}
   #nodeSelector:
-  #  matchLabels:
-  #    node-role.kubernetes.io/infra: ""
+  #  node-role.kubernetes.io/infra: ""
   podAnnotations: {}
   podLabels: {}
   podSecurityContext: {}
@@ -200,8 +197,7 @@ spec:
     nameOverride: ''
     nodeSelector: {}
     #nodeSelector:
-    #  matchLabels:
-    #    node-role.kubernetes.io/infra: ""
+    #  node-role.kubernetes.io/infra: ""
     podAnnotations: {}
     podLabels: {}
     podSecurityContext: {}
