@@ -1,11 +1,12 @@
 # OpenShift Networking
 
-The following examples in this folder are meant to get started with OpenShift Network, primarily used for OpenShfit Virtualize.  Mostly it answers the questions:
+The following examples in this folder are meant to get started with OpenShift Network, primarily used for OpenShift Virtualization.  Mostly it answers the questions:
 
 - [How do I access the subnet my OpenShift nodes are on?](ovs-bridge-mapping.md)
 - [How do I define additional bonds, VLANs, and bridge devices?](./nmstate-examples.md)
 - [How do I use defined bridges for VMs?](./nad-examples.md)
 - [How do I define a Live Migration network for VMs?](./live-migration-network.md)
+- [How do I define separate network interfaces for OpenShift Data Foundation traffic?](./odf-networking.md)
 - [How do I use MetalLB to expose services that can't use layer 7 HTTP/HTTPS via the Ingress Router?](./metallb-deployment.md)
 
 **Note**: The examples in this repository are meant for for POC/test environments - for production environments Red Hat Consulting Services are key since there are about a dozen different ways to configure additional networking interfaces for Pods and Virtual Machines and those services can guide you to the best option for your environment.
