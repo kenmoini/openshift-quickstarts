@@ -2,7 +2,7 @@
 
 **User Story:** I want to configure a specific Live Migration network for my VMs in my 192.168.99.0/24 network.
 
-In order to define an additional network dedicated to live migrations, you need a separate NIC from your installed/management network and general VM networks - otherwise there's not much of a point really.  A common configuration found would be bond0 used for installation/management via 1GbE NICs, bond1 for VM traffic via 10G/25G/etc NICs, and another set of 10G/25G/etc NICs on bond2 for live migration traffic.
+In order to define an additional network dedicated to live migrations, you need a separate NIC from your installed/management network and general VM networks - otherwise there's not much of a point really.  A common configuration found would be bond0 used for installation/management via 1GbE NICs, bond1 for VM traffic via 10G/25G/etc NICs, and another set of 10G/25G/etc NICs on bond2 for live migration traffic.  A separate NIC/bond for Live Migration traffic isn't a hard requirement as much as it is a best practice - you could use a VLAN on the management/VM network if that's the only option or eg where you have QoS set up for specific VLANs.
 
 Another requirement, is a subnet that is separate from both management and VM traffic networks that is available on all hosts.
 
