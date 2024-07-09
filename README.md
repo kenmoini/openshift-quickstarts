@@ -73,11 +73,11 @@ Note that these are somewhat opinionated guides, ideal for POCs, and that produc
 
 ### Networking
 
-- OVS Bridge to Management Network
-- Additional Bonds
-- VLAN Interfaces on Ethernet/Bonds
-- Live Migration Network for OpenShift Virtualization
-- MetalLB Deployment
+- [Installing NMState Operator](./networking/nmstate-operator.md)
+- [Defining Additional Bonds, Bridges, and VLANs](./networking/nmstate-examples.md)
+- [OVS Bridge to Management Network](./networking/ovs-bridge-mapping.md)
+- [Live Migration Network for OpenShift Virtualization](./networking/live-migration-network.md)
+- [MetalLB Deployment](./networking/metallb-deployment.md)
 
 ### Secrets Management
 
