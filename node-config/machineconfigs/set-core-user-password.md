@@ -4,7 +4,7 @@ Typically the `core` user should be authenticated to via SSH keys.  In some inst
 
 First create a password hash with `mkpasswd -m SHA-512 superSecurePassword`
 
-Then insert it into the last line in the MachineConfig below:
+Then insert it into the `passwordHash` in the MachineConfig below - you can also optionally add additional authorized public keys with the same MachineConfig:
 
 ```yaml
 ---
@@ -22,4 +22,7 @@ spec:
       users:
       - name: core 
         passwordHash: passwordHashHere
+        #sshAuthorizedKeys:
+        #- ssh-rsa AAAAB3Nz...
+        #- ssh-rsa AAAAB3Nz...
 ```
