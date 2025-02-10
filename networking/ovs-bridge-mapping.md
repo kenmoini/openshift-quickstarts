@@ -128,6 +128,8 @@ spec:
         state: present
 ```
 
+### Create NetworkAttachmentDefinitions for Networks on the OVS Bridge
+
 Once that NNCP has been created, make sure it's been applied successfully and made available on the node(s) you have selected.  Following that, you can define the NADs for the different VLANs:
 
 ```yaml
