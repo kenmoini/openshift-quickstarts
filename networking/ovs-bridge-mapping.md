@@ -107,7 +107,6 @@ spec:
       type: ovs-bridge
       state: up
       bridge:
-        allow-extra-patch-ports: true
         options:
           # Turn to true if you need STP on your leaf nodes
           stp: false
